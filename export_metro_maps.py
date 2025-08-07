@@ -168,7 +168,7 @@ def create_metro_map(geojson_file, metro_name, year):
 
 def main():
     """Export all metro area maps for all years"""
-    years = [2018, 2019, 2020, 2021, 2022, 2023]
+    years = [2018, 2019, 2020, 2021, 2022, 2023, 2024]
     
     for year in years:
         print(f"\nProcessing year {year}...")
