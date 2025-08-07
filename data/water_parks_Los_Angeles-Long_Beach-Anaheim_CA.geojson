@@ -1,0 +1,114 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -118.5,
+            33.7
+          ],
+          [
+            -118.4,
+            33.8
+          ],
+          [
+            -118.3,
+            33.9
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Pacific Ocean",
+        "type": "coastline"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -118.2,
+            34.1
+          ],
+          [
+            -118.3,
+            34.0
+          ],
+          [
+            -118.4,
+            33.9
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Los Angeles River",
+        "type": "water",
+        "water_type": "river"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -118.3,
+              34.15
+            ],
+            [
+              -118.28,
+              34.15
+            ],
+            [
+              -118.28,
+              34.13
+            ],
+            [
+              -118.3,
+              34.13
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Griffith Park",
+        "type": "park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -118.26,
+              34.08
+            ],
+            [
+              -118.24,
+              34.08
+            ],
+            [
+              -118.24,
+              34.06
+            ],
+            [
+              -118.26,
+              34.06
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Echo Park",
+        "type": "park"
+      }
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      "properties": {
+        "name": "The Loop",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6298,
+          41.9097
+        ]
+      },
+      "properties": {
+        "name": "Gold Coast",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6167,
+          41.8167
+        ]
+      },
+      "properties": {
+        "name": "Bronzeville",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6339,
+          41.9217
+        ]
+      },
+      "properties": {
+        "name": "Lincoln Park",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.5867,
+          41.7947
+        ]
+      },
+      "properties": {
+        "name": "Hyde Park",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.63,
+          41.91
+        ]
+      },
+      "properties": {
+        "name": "Old Town",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6359,
+          41.8789
+        ]
+      },
+      "properties": {
+        "name": "Willis Tower",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6225,
+          41.8825
+        ]
+      },
+      "properties": {
+        "name": "Millennium Park",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6225,
+          41.8825
+        ]
+      },
+      "properties": {
+        "name": "Cloud Gate",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6025,
+          41.8917
+        ]
+      },
+      "properties": {
+        "name": "Navy Pier",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6553,
+          41.9484
+        ]
+      },
+      "properties": {
+        "name": "Wrigley Field",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.625,
+          41.8975
+        ]
+      },
+      "properties": {
+        "name": "Magnificent Mile",
+        "type": "landmark"
+      }
+    }
+  ]
+}

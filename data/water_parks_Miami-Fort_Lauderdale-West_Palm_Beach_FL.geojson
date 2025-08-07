@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.2,
+            25.8
+          ],
+          [
+            -80.1,
+            25.9
+          ],
+          [
+            -80.0,
+            26.0
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Atlantic Ocean",
+        "type": "coastline"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.15,
+              25.75
+            ],
+            [
+              -80.13,
+              25.75
+            ],
+            [
+              -80.13,
+              25.73
+            ],
+            [
+              -80.15,
+              25.73
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Biscayne Bay",
+        "type": "water",
+        "water_type": "bay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.19,
+              25.77
+            ],
+            [
+              -80.17,
+              25.77
+            ],
+            [
+              -80.17,
+              25.75
+            ],
+            [
+              -80.19,
+              25.75
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Bayfront Park",
+        "type": "park"
+      }
+    }
+  ]
+}

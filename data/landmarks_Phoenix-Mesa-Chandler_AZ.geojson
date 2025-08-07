@@ -1,0 +1,131 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.074,
+          33.4484
+        ]
+      },
+      "properties": {
+        "name": "Downtown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.98,
+          33.48
+        ]
+      },
+      "properties": {
+        "name": "Arcadia",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.07,
+          33.45
+        ]
+      },
+      "properties": {
+        "name": "Roosevelt Row",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9261,
+          33.4942
+        ]
+      },
+      "properties": {
+        "name": "Scottsdale",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.94,
+          33.4255
+        ]
+      },
+      "properties": {
+        "name": "Tempe",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.186,
+          33.5387
+        ]
+      },
+      "properties": {
+        "name": "Glendale",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.02,
+          33.52
+        ]
+      },
+      "properties": {
+        "name": "Camelback Mountain",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.94,
+          33.46
+        ]
+      },
+      "properties": {
+        "name": "Desert Botanical Garden",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.07,
+          33.46
+        ]
+      },
+      "properties": {
+        "name": "Heard Museum",
+        "type": "landmark"
+      }
+    }
+  ]
+}

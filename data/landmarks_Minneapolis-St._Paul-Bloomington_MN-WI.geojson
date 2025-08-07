@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.265,
+          44.9778
+        ]
+      },
+      "properties": {
+        "name": "Downtown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.3,
+          44.95
+        ]
+      },
+      "properties": {
+        "name": "Uptown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.25,
+          45.0
+        ]
+      },
+      "properties": {
+        "name": "Northeast",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.23,
+          44.98
+        ]
+      },
+      "properties": {
+        "name": "Dinkytown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.28,
+          44.98
+        ]
+      },
+      "properties": {
+        "name": "North Loop",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.25,
+          44.98
+        ]
+      },
+      "properties": {
+        "name": "Stone Arch Bridge",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.29,
+          44.97
+        ]
+      },
+      "properties": {
+        "name": "Minneapolis Sculpture Garden",
+        "type": "landmark"
+      }
+    }
+  ]
+}

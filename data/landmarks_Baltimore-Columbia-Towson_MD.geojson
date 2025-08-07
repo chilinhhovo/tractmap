@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6122,
+          39.2904
+        ]
+      },
+      "properties": {
+        "name": "Inner Harbor",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.59,
+          39.28
+        ]
+      },
+      "properties": {
+        "name": "Fells Point",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.62,
+          39.3
+        ]
+      },
+      "properties": {
+        "name": "Mount Vernon",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.61,
+          39.27
+        ]
+      },
+      "properties": {
+        "name": "Federal Hill",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.58,
+          39.263
+        ]
+      },
+      "properties": {
+        "name": "Fort McHenry",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.61,
+          39.285
+        ]
+      },
+      "properties": {
+        "name": "National Aquarium",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.62,
+          39.283
+        ]
+      },
+      "properties": {
+        "name": "Camden Yards",
+        "type": "landmark"
+      }
+    }
+  ]
+}

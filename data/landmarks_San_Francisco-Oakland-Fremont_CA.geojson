@@ -1,0 +1,117 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4148,
+          37.7599
+        ]
+      },
+      "properties": {
+        "name": "The Mission",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4078,
+          37.7941
+        ]
+      },
+      "properties": {
+        "name": "Chinatown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.45,
+          37.77
+        ]
+      },
+      "properties": {
+        "name": "Haight-Ashbury",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41,
+          37.79
+        ]
+      },
+      "properties": {
+        "name": "Nob Hill",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41,
+          37.8
+        ]
+      },
+      "properties": {
+        "name": "North Beach",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4783,
+          37.8199
+        ]
+      },
+      "properties": {
+        "name": "Golden Gate Bridge",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.423,
+          37.827
+        ]
+      },
+      "properties": {
+        "name": "Alcatraz",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41,
+          37.808
+        ]
+      },
+      "properties": {
+        "name": "Fisherman's Wharf",
+        "type": "landmark"
+      }
+    }
+  ]
+}

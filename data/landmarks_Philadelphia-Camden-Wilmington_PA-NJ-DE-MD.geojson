@@ -1,0 +1,131 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1452,
+          39.9526
+        ]
+      },
+      "properties": {
+        "name": "Old City",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.172,
+          39.949
+        ]
+      },
+      "properties": {
+        "name": "Rittenhouse Square",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.15,
+          39.945
+        ]
+      },
+      "properties": {
+        "name": "Society Hill",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.13,
+          39.97
+        ]
+      },
+      "properties": {
+        "name": "Fishtown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.14,
+          39.965
+        ]
+      },
+      "properties": {
+        "name": "Northern Liberties",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.15,
+          39.949
+        ]
+      },
+      "properties": {
+        "name": "Liberty Bell",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.15,
+          39.9489
+        ]
+      },
+      "properties": {
+        "name": "Independence Hall",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18,
+          39.965
+        ]
+      },
+      "properties": {
+        "name": "Rocky Steps",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.16,
+          39.954
+        ]
+      },
+      "properties": {
+        "name": "Reading Terminal Market",
+        "type": "landmark"
+      }
+    }
+  ]
+}

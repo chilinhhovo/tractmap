@@ -1,0 +1,145 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.797,
+          32.7767
+        ]
+      },
+      "properties": {
+        "name": "Downtown Dallas",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.8,
+          32.7875
+        ]
+      },
+      "properties": {
+        "name": "Uptown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.8167,
+          32.75
+        ]
+      },
+      "properties": {
+        "name": "Bishop Arts",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.3525,
+          32.7883
+        ]
+      },
+      "properties": {
+        "name": "Stockyards",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.3306,
+          32.7553
+        ]
+      },
+      "properties": {
+        "name": "Sundance Square",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.8083,
+          32.7786
+        ]
+      },
+      "properties": {
+        "name": "Dealey Plaza",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.8,
+          32.775
+        ]
+      },
+      "properties": {
+        "name": "Reunion Tower",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0944,
+          32.7473
+        ]
+      },
+      "properties": {
+        "name": "AT&T Stadium",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7167,
+          32.8233
+        ]
+      },
+      "properties": {
+        "name": "Dallas Arboretum",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.3525,
+          32.7883
+        ]
+      },
+      "properties": {
+        "name": "Fort Worth Stockyards",
+        "type": "landmark"
+      }
+    }
+  ]
+}

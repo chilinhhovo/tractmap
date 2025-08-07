@@ -1,0 +1,117 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1611,
+          32.7157
+        ]
+      },
+      "properties": {
+        "name": "Gaslamp Quarter",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2713,
+          32.8328
+        ]
+      },
+      "properties": {
+        "name": "La Jolla",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.13,
+          32.754
+        ]
+      },
+      "properties": {
+        "name": "Old Town",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1831,
+          32.6859
+        ]
+      },
+      "properties": {
+        "name": "Coronado",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.17,
+          32.72
+        ]
+      },
+      "properties": {
+        "name": "Little Italy",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.15,
+          32.732
+        ]
+      },
+      "properties": {
+        "name": "Balboa Park",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.149,
+          32.7353
+        ]
+      },
+      "properties": {
+        "name": "San Diego Zoo",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.175,
+          32.714
+        ]
+      },
+      "properties": {
+        "name": "USS Midway",
+        "type": "landmark"
+      }
+    }
+  ]
+}

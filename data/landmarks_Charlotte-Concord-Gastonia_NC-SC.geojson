@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.8431,
+          35.2271
+        ]
+      },
+      "properties": {
+        "name": "Uptown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.82,
+          35.24
+        ]
+      },
+      "properties": {
+        "name": "NoDa",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.85,
+          35.21
+        ]
+      },
+      "properties": {
+        "name": "South End",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.83,
+          35.22
+        ]
+      },
+      "properties": {
+        "name": "Plaza Midwood",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.85,
+          35.225
+        ]
+      },
+      "properties": {
+        "name": "Bank of America Stadium",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.85,
+          35.225
+        ]
+      },
+      "properties": {
+        "name": "NASCAR Hall of Fame",
+        "type": "landmark"
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.05,
+            40.75
+          ],
+          [
+            -74.02,
+            40.72
+          ],
+          [
+            -73.98,
+            40.7
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Hudson River",
+        "type": "water",
+        "water_type": "river"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.95,
+            40.75
+          ],
+          [
+            -73.92,
+            40.72
+          ],
+          [
+            -73.88,
+            40.7
+          ]
+        ]
+      },
+      "properties": {
+        "name": "East River",
+        "type": "water",
+        "water_type": "river"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.97,
+              40.78
+            ],
+            [
+              -73.95,
+              40.78
+            ],
+            [
+              -73.95,
+              40.76
+            ],
+            [
+              -73.97,
+              40.76
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Central Park",
+        "type": "park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.97,
+              40.66
+            ],
+            [
+              -73.95,
+              40.66
+            ],
+            [
+              -73.95,
+              40.64
+            ],
+            [
+              -73.97,
+              40.64
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Prospect Park",
+        "type": "park"
+      }
+    }
+  ]
+}

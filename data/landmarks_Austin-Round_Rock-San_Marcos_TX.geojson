@@ -1,0 +1,117 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7431,
+          30.2672
+        ]
+      },
+      "properties": {
+        "name": "Downtown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.75,
+          30.25
+        ]
+      },
+      "properties": {
+        "name": "South Congress",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.72,
+          30.27
+        ]
+      },
+      "properties": {
+        "name": "East Austin",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.73,
+          30.3
+        ]
+      },
+      "properties": {
+        "name": "Hyde Park",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.77,
+          30.27
+        ]
+      },
+      "properties": {
+        "name": "Zilker",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7404,
+          30.2747
+        ]
+      },
+      "properties": {
+        "name": "Texas State Capitol",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.745,
+          30.265
+        ]
+      },
+      "properties": {
+        "name": "Congress Avenue Bridge",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.77,
+          30.264
+        ]
+      },
+      "properties": {
+        "name": "Barton Springs",
+        "type": "landmark"
+      }
+    }
+  ]
+}

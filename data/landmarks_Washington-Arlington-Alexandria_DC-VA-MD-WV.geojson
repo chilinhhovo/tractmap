@@ -1,0 +1,131 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.009,
+          38.8899
+        ]
+      },
+      "properties": {
+        "name": "Capitol Hill",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.063,
+          38.909
+        ]
+      },
+      "properties": {
+        "name": "Georgetown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.009,
+          38.8899
+        ]
+      },
+      "properties": {
+        "name": "National Mall",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.04,
+          38.92
+        ]
+      },
+      "properties": {
+        "name": "Adams Morgan",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.04,
+          38.91
+        ]
+      },
+      "properties": {
+        "name": "Dupont Circle",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.009,
+          38.8899
+        ]
+      },
+      "properties": {
+        "name": "Capitol",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0365,
+          38.8977
+        ]
+      },
+      "properties": {
+        "name": "White House",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0502,
+          38.8893
+        ]
+      },
+      "properties": {
+        "name": "Lincoln Memorial",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.009,
+          38.8899
+        ]
+      },
+      "properties": {
+        "name": "Smithsonian Museums",
+        "type": "landmark"
+      }
+    }
+  ]
+}

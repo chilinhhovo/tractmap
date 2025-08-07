@@ -1,0 +1,117 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -87.6,
+              41.9
+            ],
+            [
+              -87.5,
+              42.0
+            ],
+            [
+              -87.4,
+              42.1
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Lake Michigan",
+        "type": "water",
+        "water_type": "lake"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -87.65,
+            41.9
+          ],
+          [
+            -87.63,
+            41.88
+          ],
+          [
+            -87.61,
+            41.86
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Chicago River",
+        "type": "water",
+        "water_type": "river"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -87.62,
+              41.88
+            ],
+            [
+              -87.6,
+              41.88
+            ],
+            [
+              -87.6,
+              41.86
+            ],
+            [
+              -87.62,
+              41.86
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Millennium Park",
+        "type": "park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -87.62,
+              41.87
+            ],
+            [
+              -87.6,
+              41.87
+            ],
+            [
+              -87.6,
+              41.85
+            ],
+            [
+              -87.62,
+              41.85
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Grant Park",
+        "type": "park"
+      }
+    }
+  ]
+}

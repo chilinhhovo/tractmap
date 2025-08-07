@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.44,
+          27.968
+        ]
+      },
+      "properties": {
+        "name": "Ybor City",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.4572,
+          27.9506
+        ]
+      },
+      "properties": {
+        "name": "Downtown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.47,
+          27.94
+        ]
+      },
+      "properties": {
+        "name": "Hyde Park",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.45,
+          27.94
+        ]
+      },
+      "properties": {
+        "name": "Channelside",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.46,
+          27.95
+        ]
+      },
+      "properties": {
+        "name": "Tampa Riverwalk",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.47,
+          27.94
+        ]
+      },
+      "properties": {
+        "name": "Bayshore Boulevard",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.45,
+          27.943
+        ]
+      },
+      "properties": {
+        "name": "Amalie Arena",
+        "type": "landmark"
+      }
+    }
+  ]
+}

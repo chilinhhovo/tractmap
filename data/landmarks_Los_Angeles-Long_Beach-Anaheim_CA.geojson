@@ -1,0 +1,159 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3287,
+          34.0928
+        ]
+      },
+      "properties": {
+        "name": "Hollywood",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4912,
+          34.0195
+        ]
+      },
+      "properties": {
+        "name": "Santa Monica",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4004,
+          34.0736
+        ]
+      },
+      "properties": {
+        "name": "Beverly Hills",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      "properties": {
+        "name": "Downtown LA",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4695,
+          33.985
+        ]
+      },
+      "properties": {
+        "name": "Venice Beach",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3216,
+          34.1341
+        ]
+      },
+      "properties": {
+        "name": "Hollywood Sign",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3004,
+          34.1184
+        ]
+      },
+      "properties": {
+        "name": "Griffith Observatory",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5,
+          34.0083
+        ]
+      },
+      "properties": {
+        "name": "Santa Monica Pier",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3265,
+          34.1016
+        ]
+      },
+      "properties": {
+        "name": "Walk of Fame",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4743,
+          34.0781
+        ]
+      },
+      "properties": {
+        "name": "Getty Center",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4695,
+          33.985
+        ]
+      },
+      "properties": {
+        "name": "Venice Boardwalk",
+        "type": "landmark"
+      }
+    }
+  ]
+}

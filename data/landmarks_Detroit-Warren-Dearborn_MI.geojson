@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      "properties": {
+        "name": "Downtown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.06,
+          42.35
+        ]
+      },
+      "properties": {
+        "name": "Midtown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.04,
+          42.335
+        ]
+      },
+      "properties": {
+        "name": "Greektown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.07,
+          42.33
+        ]
+      },
+      "properties": {
+        "name": "Corktown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.04,
+          42.329
+        ]
+      },
+      "properties": {
+        "name": "Renaissance Center",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.09,
+          42.35
+        ]
+      },
+      "properties": {
+        "name": "Motown Museum",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.98,
+          42.35
+        ]
+      },
+      "properties": {
+        "name": "Belle Isle",
+        "type": "landmark"
+      }
+    }
+  ]
+}

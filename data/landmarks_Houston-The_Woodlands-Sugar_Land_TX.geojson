@@ -1,0 +1,131 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      "properties": {
+        "name": "Downtown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.39,
+          29.74
+        ]
+      },
+      "properties": {
+        "name": "Montrose",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.4,
+          29.8
+        ]
+      },
+      "properties": {
+        "name": "The Heights",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.39,
+          29.72
+        ]
+      },
+      "properties": {
+        "name": "Museum District",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.42,
+          29.75
+        ]
+      },
+      "properties": {
+        "name": "River Oaks",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.0972,
+          29.5522
+        ]
+      },
+      "properties": {
+        "name": "Space Center Houston",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.0806,
+          29.7494
+        ]
+      },
+      "properties": {
+        "name": "San Jacinto Monument",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.36,
+          29.755
+        ]
+      },
+      "properties": {
+        "name": "Discovery Green",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.37,
+          29.76
+        ]
+      },
+      "properties": {
+        "name": "Sam Houston Park",
+        "type": "landmark"
+      }
+    }
+  ]
+}

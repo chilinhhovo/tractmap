@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -95.4,
+            29.8
+          ],
+          [
+            -95.3,
+            29.7
+          ],
+          [
+            -95.2,
+            29.6
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Buffalo Bayou",
+        "type": "water",
+        "water_type": "river"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.4,
+              29.72
+            ],
+            [
+              -95.38,
+              29.72
+            ],
+            [
+              -95.38,
+              29.7
+            ],
+            [
+              -95.4,
+              29.7
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Hermann Park",
+        "type": "park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.36,
+              29.76
+            ],
+            [
+              -95.34,
+              29.76
+            ],
+            [
+              -95.34,
+              29.74
+            ],
+            [
+              -95.36,
+              29.74
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Discovery Green",
+        "type": "park"
+      }
+    }
+  ]
+}

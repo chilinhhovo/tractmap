@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3962,
+          33.9533
+        ]
+      },
+      "properties": {
+        "name": "Riverside",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2898,
+          34.1083
+        ]
+      },
+      "properties": {
+        "name": "San Bernardino",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1825,
+          34.0556
+        ]
+      },
+      "properties": {
+        "name": "Redlands",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6509,
+          34.0633
+        ]
+      },
+      "properties": {
+        "name": "Ontario",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3962,
+          33.9533
+        ]
+      },
+      "properties": {
+        "name": "Mission Inn",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2898,
+          34.1083
+        ]
+      },
+      "properties": {
+        "name": "San Bernardino National Forest",
+        "type": "landmark"
+      }
+    }
+  ]
+}

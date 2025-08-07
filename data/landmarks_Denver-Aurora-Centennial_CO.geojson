@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9903,
+          39.7392
+        ]
+      },
+      "properties": {
+        "name": "LoDo",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.98,
+          39.74
+        ]
+      },
+      "properties": {
+        "name": "Capitol Hill",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.02,
+          39.76
+        ]
+      },
+      "properties": {
+        "name": "Highlands",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.95,
+          39.72
+        ]
+      },
+      "properties": {
+        "name": "Cherry Creek",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0,
+          39.753
+        ]
+      },
+      "properties": {
+        "name": "Union Station",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.205,
+          39.665
+        ]
+      },
+      "properties": {
+        "name": "Red Rocks Amphitheatre",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.99,
+          39.74
+        ]
+      },
+      "properties": {
+        "name": "Civic Center",
+        "type": "landmark"
+      }
+    }
+  ]
+}

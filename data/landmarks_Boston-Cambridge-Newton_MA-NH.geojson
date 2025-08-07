@@ -1,0 +1,131 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.08,
+          42.35
+        ]
+      },
+      "properties": {
+        "name": "Back Bay",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.07,
+          42.358
+        ]
+      },
+      "properties": {
+        "name": "Beacon Hill",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.055,
+          42.365
+        ]
+      },
+      "properties": {
+        "name": "North End",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.05,
+          42.34
+        ]
+      },
+      "properties": {
+        "name": "South Boston",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.1097,
+          42.3736
+        ]
+      },
+      "properties": {
+        "name": "Cambridge",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0972,
+          42.3467
+        ]
+      },
+      "properties": {
+        "name": "Fenway Park",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.06,
+          42.36
+        ]
+      },
+      "properties": {
+        "name": "Freedom Trail",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.055,
+          42.36
+        ]
+      },
+      "properties": {
+        "name": "Quincy Market",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.065,
+          42.355
+        ]
+      },
+      "properties": {
+        "name": "Boston Common",
+        "type": "landmark"
+      }
+    }
+  ]
+}

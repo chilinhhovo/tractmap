@@ -1,0 +1,131 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.372,
+          33.784
+        ]
+      },
+      "properties": {
+        "name": "Midtown",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.378,
+          33.847
+        ]
+      },
+      "properties": {
+        "name": "Buckhead",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.37,
+          33.755
+        ]
+      },
+      "properties": {
+        "name": "Sweet Auburn",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.36,
+          33.76
+        ]
+      },
+      "properties": {
+        "name": "Old Fourth Ward",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.35,
+          33.77
+        ]
+      },
+      "properties": {
+        "name": "Little Five Points",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.393,
+          33.763
+        ]
+      },
+      "properties": {
+        "name": "Centennial Olympic Park",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.37,
+          33.755
+        ]
+      },
+      "properties": {
+        "name": "MLK Jr. National Historical Park",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.385,
+          33.772
+        ]
+      },
+      "properties": {
+        "name": "Fox Theatre",
+        "type": "landmark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.395,
+          33.763
+        ]
+      },
+      "properties": {
+        "name": "Georgia Aquarium",
+        "type": "landmark"
+      }
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Area Tract Maps - Simple</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .year-btn {
+            background: #f8f9fa;
+            color: #333;
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            margin: 0 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .year-btn.active {
+            background: #007bff;
+            color: white;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+        }
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border: 1px solid #ccc;
+        }
+        .metro-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+        .metro-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .metro-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .metro-map {
+            width: 100%;
+            height: 250px;
+            border: 1px solid #eee;
+            margin-bottom: 10px;
+        }
+        .debug-info {
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Metro Area Tract Maps - Simple Version</h1>
+        
+        <div class="controls">
+            <button class="year-btn active" data-year="2018">2018</button>
+            <button class="year-btn" data-year="2019">2019</button>
+            <button class="year-btn" data-year="2020">2020</button>
+            <button class="year-btn" data-year="2021">2021</button>
+            <button class="year-btn" data-year="2022">2022</button>
+            <button class="year-btn" data-year="2023">2023</button>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: #CC6600;"></div>
+                <span>Very High Gap (>15%)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #FF8000;"></div>
+                <span>High Gap (10-15%)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #FFB366;"></div>
+                <span>Medium Gap (5-10%)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #FFE5CC;"></div>
+                <span>Low Gap (<5%)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #4A90E2;"></div>
+                <span>No Gap/Positive</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #cccccc;"></div>
+                <span>Insufficient Data (<5 applications)</span>
+            </div>
+        </div>
+        
+        <div class="metro-grid" id="metroGrid"></div>
+    </div>
+
+    <script>
+        let selectedYear = 2018;
+        
+        // All metro areas including new additions with population centers
+        const metroAreas = [
+            { name: "New York-Newark-Jersey City, NY-NJ-PA", code: "35620", center: [-74.006, 40.7128] },
+            { name: "Los Angeles-Long Beach-Anaheim, CA", code: "31080", center: [-118.2437, 34.0522] },
+            { name: "Chicago-Naperville-Elgin, IL-IN-WI", code: "16980", center: [-87.6298, 41.8781] },
+            { name: "Dallas-Fort Worth-Arlington, TX", code: "19100", center: [-96.7970, 32.7767] },
+            { name: "Houston-The Woodlands-Sugar Land, TX", code: "26420", center: [-95.3698, 29.7604] },
+            { name: "Washington-Arlington-Alexandria, DC-VA-MD-WV", code: "47900", center: [-77.0369, 38.9072] },
+            { name: "Miami-Fort Lauderdale-West Palm Beach, FL", code: "33100", center: [-80.1918, 25.7617] },
+            { name: "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD", code: "37980", center: [-75.1652, 39.9526] },
+            { name: "Atlanta-Sandy Springs-Roswell, GA", code: "12060", center: [-84.3880, 33.7490] },
+            { name: "Phoenix-Mesa-Chandler, AZ", code: "38060", center: [-112.0740, 33.4484] },
+            { name: "Boston-Cambridge-Newton, MA-NH", code: "14460", center: [-71.0589, 42.3601] },
+            { name: "San Francisco-Oakland-Fremont, CA", code: "41860", center: [-122.4194, 37.7749] },
+            { name: "Riverside-San Bernardino-Ontario, CA", code: "40140", center: [-117.3755, 34.0522] },
+            { name: "Detroit-Warren-Dearborn, MI", code: "19820", center: [-83.0458, 42.3314] },
+            { name: "Seattle-Tacoma-Bellevue, WA", code: "42660", center: [-122.3321, 47.6062] },
+            { name: "Minneapolis-St. Paul-Bloomington, MN-WI", code: "33460", center: [-93.2650, 44.9778] },
+            { name: "Tampa-St. Petersburg-Clearwater, FL", code: "45300", center: [-82.4572, 27.9506] },
+            { name: "San Diego-Chula Vista-Carlsbad, CA", code: "41740", center: [-117.1611, 32.7157] },
+            { name: "Denver-Aurora-Centennial, CO", code: "19740", center: [-104.9903, 39.7392] },
+            { name: "Orlando-Kissimmee-Sanford, FL", code: "36740", center: [-81.3792, 28.5383] },
+            { name: "Charlotte-Concord-Gastonia, NC-SC", code: "16740", center: [-80.8431, 35.2271] },
+            { name: "Baltimore-Columbia-Towson, MD", code: "12580", center: [-76.6122, 39.2904] },
+            { name: "St. Louis, MO-IL", code: "41180", center: [-90.1994, 38.6270] },
+            { name: "San Antonio-New Braunfels, TX", code: "41700", center: [-98.4936, 29.4241] },
+            { name: "Austin-Round Rock-San Marcos, TX", code: "12420", center: [-97.7431, 30.2672] },
+            { name: "Las Vegas-Henderson-North Las Vegas, NV", code: "29820", center: [-115.1398, 36.1699] },
+            { name: "Sacramento-Roseville-Folsom, CA", code: "40900", center: [-121.4944, 38.5816] }
+        ];
+
+        // Function to get metro center coordinates
+        function getMetroCenter(metroName) {
+            const metro = metroAreas.find(m => m.name === metroName);
+            return metro ? metro.center : [0, 0];
+        }
+        
+        function getGapColor(gap, whiteTotal, blackTotal) {
+            // Check if total applications are less than 5
+            if (whiteTotal + blackTotal < 5) {
+                return '#cccccc'; // Grey for insufficient data
+            }
+            
+            // Orange for gaps, Blue for no gap/positive
+            if (gap < 0) return '#4A90E2'; // Blue for positive (no gap)
+            if (gap < 0.05) return '#FFE5CC'; // Light orange for low gap
+            if (gap < 0.10) return '#FFB366'; // Medium orange for medium gap
+            if (gap < 0.15) return '#FF8000'; // Dark orange for high gap
+            return '#CC6600'; // Very dark orange for very high gap
+        }
+        
+        function createMetroMap(metro, containerId, year) {
+            const container = document.getElementById(containerId);
+            const width = 380;
+            const height = 250;
+            
+            // Clear container
+            container.innerHTML = '';
+            
+            // Create canvas instead of SVG for better performance
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            canvas.style.border = '1px solid #ddd';
+            container.appendChild(canvas);
+            
+            const ctx = canvas.getContext('2d');
+            
+            const geojsonFile = `data/metro_tracts_${metro.code}_${year}.geojson`;
+            
+            console.log(`Loading ${geojsonFile} for ${metro.name}`);
+            
+            d3.json(geojsonFile).then(function(geojson) {
+                console.log(`Loaded ${geojsonFile}:`, geojson);
+                
+                if (geojson && geojson.features && geojson.features.length > 0) {
+                    console.log(`Found ${geojson.features.length} features`);
+                    
+                    // Create projection - use Albers for metro areas instead of AlbersUsa
+                    const projection = d3.geoAlbers()
+                        .fitSize([width, height], geojson);
+                    
+                    const path = d3.geoPath().projection(projection);
+                    
+                    // Draw tracts on canvas
+                    geojson.features.forEach(feature => {
+                        const gap = feature.properties.gap;
+                        const whiteTotal = feature.properties.white_total;
+                        const blackTotal = feature.properties.black_total;
+                        const color = getGapColor(gap, whiteTotal, blackTotal);
+                        
+                        // Create path for tract
+                        const pathData = path(feature);
+                        if (pathData) {
+                            // Draw tract
+                            ctx.fillStyle = color;
+                            ctx.strokeStyle = '#fff';
+                            ctx.lineWidth = 0.5;
+                            
+                            // Parse and draw path
+                            const path2d = new Path2D(pathData);
+                            ctx.fill(path2d);
+                            ctx.stroke(path2d);
+                        }
+                    });
+
+                    // Load and draw landmarks
+                                           const landmarkFile = `data/landmarks_${metro.name.replace('/', '-').replace(',', '').replace(' ', '_')}.geojson`;
+                    d3.json(landmarkFile).then(function(landmarkData) {
+                        if (landmarkData && landmarkData.features && landmarkData.features.length > 0) {
+                            console.log(`Loaded ${landmarkData.features.length} landmarks for ${metro.name}`);
+                            
+                            // Draw landmark points on canvas
+                            landmarkData.features.forEach(landmark => {
+                                const coords = projection(landmark.geometry.coordinates);
+                                ctx.fillStyle = '#000';
+                                ctx.strokeStyle = '#fff';
+                                ctx.lineWidth = 1;
+                                ctx.globalAlpha = 0.8;
+                                
+                                ctx.beginPath();
+                                ctx.arc(coords[0], coords[1], 3, 0, 2 * Math.PI);
+                                ctx.fill();
+                                ctx.stroke();
+                            });
+                            ctx.globalAlpha = 1.0;
+                        }
+                    }).catch(function(error) {
+                        console.log(`No landmark data available for ${metro.name}: ${error.message}`);
+                    });
+
+                    // Load and draw water and park features
+                                           const waterParksFile = `data/water_parks_${metro.name.replace('/', '-').replace(',', '').replace(' ', '_')}.geojson`;
+                    d3.json(waterParksFile).then(function(waterParksData) {
+                        if (waterParksData && waterParksData.features && waterParksData.features.length > 0) {
+                            console.log(`Loaded ${waterParksData.features.length} water/park features for ${metro.name}`);
+                            
+                            // Draw water features (rivers, lakes, coastline)
+                            const waterFeatures = waterParksData.features.filter(d => d.properties.type === 'water' || d.properties.type === 'coastline');
+                            waterFeatures.forEach(feature => {
+                                const pathData = path(feature);
+                                if (pathData) {
+                                    ctx.strokeStyle = '#808080';
+                                    ctx.lineWidth = 2;
+                                    ctx.globalAlpha = 0.7;
+                                    ctx.fillStyle = 'none';
+                                    
+                                    const path2d = new Path2D(pathData);
+                                    ctx.stroke(path2d);
+                                }
+                            });
+                            
+                            // Draw park features
+                            const parkFeatures = waterParksData.features.filter(d => d.properties.type === 'park');
+                            parkFeatures.forEach(feature => {
+                                const pathData = path(feature);
+                                if (pathData) {
+                                    ctx.fillStyle = '#D3D3D3';
+                                    ctx.strokeStyle = '#696969';
+                                    ctx.lineWidth = 1;
+                                    ctx.globalAlpha = 0.6;
+                                    
+                                    const path2d = new Path2D(pathData);
+                                    ctx.fill(path2d);
+                                    ctx.stroke(path2d);
+                                }
+                            });
+                            ctx.globalAlpha = 1.0;
+                        }
+                    }).catch(function(error) {
+                        console.log(`No water/park data available for ${metro.name}: ${error.message}`);
+                    });
+                    
+                    // Add tract count on canvas
+                    ctx.fillStyle = '#333';
+                    ctx.font = '12px Arial';
+                    ctx.textAlign = 'center';
+                    ctx.fillText(`${geojson.features.length} tracts`, width / 2, height - 10);
+                    
+                    // Calculate and display stats
+                    const gaps = geojson.features.map(f => f.properties.gap);
+                    const avgGap = gaps.reduce((a, b) => a + b, 0) / gaps.length;
+                    
+                    const avgWhiteRate = geojson.features.reduce((sum, f) => sum + f.properties.white_rate, 0) / geojson.features.length;
+                    const avgBlackRate = geojson.features.reduce((sum, f) => sum + f.properties.black_rate, 0) / geojson.features.length;
+                    
+                    // Add stats to the card
+                    const card = container.parentElement;
+                    const statsDiv = card.querySelector('.stats') || card.appendChild(document.createElement('div'));
+                    statsDiv.className = 'stats';
+                    statsDiv.innerHTML = `
+                        <div style="text-align: center; margin-top: 10px;">
+                            <div style="display: inline-block; margin: 0 10px;">
+                                <strong>White:</strong> ${(avgWhiteRate * 100).toFixed(1)}%
+                            </div>
+                            <div style="display: inline-block; margin: 0 10px;">
+                                <strong>Black:</strong> ${(avgBlackRate * 100).toFixed(1)}%
+                            </div>
+                            <div style="display: inline-block; margin: 0 10px;">
+                                <strong>Gap:</strong> ${(avgGap * 100).toFixed(1)}%
+                            </div>
+                        </div>
+                    `;
+                    
+                } else {
+                    console.log(`No features found in ${geojsonFile}`);
+                    // Draw background for no data
+                    ctx.fillStyle = '#f8f8f8';
+                    ctx.fillRect(0, 0, width, height);
+                    ctx.strokeStyle = '#ddd';
+                    ctx.strokeRect(0, 0, width, height);
+                    
+                    ctx.fillStyle = '#666';
+                    ctx.font = '14px Arial';
+                    ctx.textAlign = 'center';
+                    ctx.fillText('No tract data available', width / 2, height / 2);
+                }
+            }).catch(function(error) {
+                console.error(`Error loading ${geojsonFile}:`, error);
+                
+                // Draw background for error
+                ctx.fillStyle = '#f8f8f8';
+                ctx.fillRect(0, 0, width, height);
+                ctx.strokeStyle = '#ddd';
+                ctx.strokeRect(0, 0, width, height);
+                
+                ctx.fillStyle = '#666';
+                ctx.font = '14px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText('Error loading data', width / 2, height / 2);
+                
+                // Add debug info
+                const debugDiv = container.parentElement.appendChild(document.createElement('div'));
+                debugDiv.className = 'debug-info';
+                debugDiv.textContent = `Error: ${error.message}`;
+            });
+        }
+        
+        function createMetroCards() {
+            const metroGrid = document.getElementById('metroGrid');
+            metroGrid.innerHTML = '';
+            
+            metroAreas.forEach(metro => {
+                const card = document.createElement('div');
+                card.className = 'metro-card';
+                
+                const nameDiv = document.createElement('div');
+                nameDiv.className = 'metro-name';
+                nameDiv.textContent = metro.name;
+                
+                const mapDiv = document.createElement('div');
+                mapDiv.className = 'metro-map';
+                mapDiv.id = `metro-map-${metro.code}`;
+                
+                card.appendChild(nameDiv);
+                card.appendChild(mapDiv);
+                metroGrid.appendChild(card);
+                
+                // Create the map after the div is added
+                setTimeout(() => {
+                    createMetroMap(metro, `metro-map-${metro.code}`, selectedYear);
+                }, 100);
+            });
+        }
+        
+        // Set up year buttons
+        document.querySelectorAll('.year-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const year = parseInt(this.dataset.year);
+                selectedYear = year;
+                
+                // Update active button
+                document.querySelectorAll('.year-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Recreate maps
+                createMetroCards();
+            });
+        });
+        
+        // Initialize
+        createMetroCards();
+    </script>
+</body>
+</html> 

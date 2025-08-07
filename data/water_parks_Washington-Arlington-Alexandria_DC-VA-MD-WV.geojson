@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -77.1,
+            38.9
+          ],
+          [
+            -77.0,
+            38.8
+          ],
+          [
+            -76.9,
+            38.7
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Potomac River",
+        "type": "water",
+        "water_type": "river"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.02,
+              38.89
+            ],
+            [
+              -77.0,
+              38.89
+            ],
+            [
+              -77.0,
+              38.87
+            ],
+            [
+              -77.02,
+              38.87
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "National Mall",
+        "type": "park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.05,
+              38.92
+            ],
+            [
+              -77.03,
+              38.92
+            ],
+            [
+              -77.03,
+              38.9
+            ],
+            [
+              -77.05,
+              38.9
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Rock Creek Park",
+        "type": "park"
+      }
+    }
+  ]
+}
